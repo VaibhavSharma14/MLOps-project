@@ -2,9 +2,14 @@ import logging
 import os
 from pathlib import Path
 
+
+package_name = "mongodb_connect"
+
 list_of_files = [
     ".github/workflows/.gitkeep",
-    "src/__init__.py",
+    "src/__init__.py",  
+    f"src/{package_name}/__init__.py",  
+    f"src/{package_name}/mongodb_crud.py", 
     "src/components/__init__.py",
     "src/components/data_ingestion.py",
     "src/components/data_transformation.py",
@@ -22,7 +27,7 @@ list_of_files = [
     "requirements.txt",
     "requirements_dev.txt",
     "setup.cfg",
-    "setup.py",
+    "setup.py",+
     "pyproject.toml",
     "experiment/experiments.ipynb",
 ]
